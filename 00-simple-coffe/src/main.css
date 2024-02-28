@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:#111315;
+  background-image: url(./assets/bg-cafe.jpg);
+  background-repeat: no-repeat;
+  background-position:center top;
+  background-size: contain;
+  overflow-x:hidden;
+}

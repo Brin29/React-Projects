@@ -2,6 +2,8 @@
   display:flex;
   flex-direction:column;
   width:240px;
+  gap:12px;
+  margin-bottom:20px;
 }
 
 .imagen{
@@ -9,9 +11,24 @@
 }
 
 .popular{
+  text-align:center;
   position:relative;
-  top:30px;
-  left:20px;
+  top:52px;
+  left:10px;
+  background-color:#F6C768;
+  width:80px;
+  padding:6px 3px;
+  border-radius:40px;
+  color:black;
+}
+
+.precio{
+  width:50px;
+  background-color: #BEE3CC;
+  text-align:center;
+  color:black;
+  padding:3px 1.5px;
+  border-radius:5px;
 }
 
 .container-card > .nombre-precio{
@@ -25,7 +42,9 @@
 
 .disponible{
   display:flex;
-  align-items:flex-end;
-  justify-self:flex-end;
 }
 
+.rating-container{
+  display: flex;
+  justify-content:space-between;
+}

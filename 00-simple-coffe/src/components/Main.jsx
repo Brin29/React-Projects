@@ -1,3 +1,4 @@
+import "./Main.css"
 import { useEffect, useState } from "react"
 import CoffeCard from "./CoffeCard"
 
@@ -27,25 +28,27 @@ export default function Main (){
     
   return (
     <>
+    <div className="main-card">
       {coffes.length === 0 ? 
         (<h2>Cargando...</h2>) : 
         ( 
           coffes.map((el) => {
             return (
-            <CoffeCard 
-            key={el.id} 
-            img={el.image} 
-            name={el.name} 
-            price={el.price} 
-            rating={el.rating}
-            votes={el.votes}
-            popular={el.popular}
-            available={el.available}
-            />
+              <CoffeCard 
+              key={el.id} 
+              img={el.image} 
+              name={el.name} 
+              price={el.price} 
+              rating={el.rating}
+              votes={el.votes}
+              popular={el.popular}
+              available={el.available}
+              />
             )
           })
         )
       }
+    </div>
   </>
   )
 }

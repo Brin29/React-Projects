@@ -1,0 +1,8 @@
+.main-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap;
+  width:800px;
+  gap:40px;
+}

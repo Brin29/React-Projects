@@ -9,9 +9,11 @@ export default function CoffeCard({img, name, price, rating, votes, popular, ava
         <span className="nombre">{name}</span>
         <span className="precio">{price}</span>
       </div>
+      <div className="rating-container">
       <div className="rating-votes">
         <span className="rate">{rating}</span>
-        <span className="votos">({votes} votes)</span>
+        <span className="votos">{votes > 0 ? `(${votes} votes)` : "No ratings"}</span>
+      </div>
         {!available ? <span className="disponible">Sold out</span> : null}
       </div>
     </div>
