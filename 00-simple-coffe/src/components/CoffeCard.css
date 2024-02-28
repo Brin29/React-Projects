@@ -1,0 +1,31 @@
+.container-card{
+  display:flex;
+  flex-direction:column;
+  width:240px;
+}
+
+.imagen{
+  border-radius:15px;
+}
+
+.popular{
+  position:relative;
+  top:30px;
+  left:20px;
+}
+
+.container-card > .nombre-precio{
+  display:flex;
+  justify-content:space-between;
+}
+
+.container-card > .rating-votes{
+  display:flex;
+}
+
+.disponible{
+  display:flex;
+  align-items:flex-end;
+  justify-self:flex-end;
+}
+
